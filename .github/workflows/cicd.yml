@@ -7,8 +7,8 @@ jobs:
     steps:
       # To use this repository's private action,
       # you must check out the repository
-      - name: Checkout
-        uses: actions/checkout@v3
+      #- name: Checkout
+      #  uses: actions/checkout@v3
       - name: Hello world action step
         uses: FernandoGutierrezG/docker_01@v1
         id: hello

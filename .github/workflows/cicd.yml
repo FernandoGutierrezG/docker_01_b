@@ -8,8 +8,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: call the remote action
+        #uses: FernandoGutierrezG/docker_01@v2
+        uses: ./
         id: call_action
-        uses: FernandoGutierrezG/docker_01@v2
         with:
           who-to-greet: 'fernando'
       # Use the output from the `call_action` step
